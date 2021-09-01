@@ -1,0 +1,19 @@
+# put your python code here
+x = int(input())
+xr = x % 1000
+xl = (x - xr)/1000
+xl3 = xl % 10
+xl2 = (xl % 100 - xl3)/10
+xl1 = (xl % 1000 - xl2 - xl3)/100
+xlSum = int(xl3 + xl2 + xl1)
+
+xr3 = xr % 10
+xr2 = (xr % 100 - xr3)/10
+xr1 = (xr % 1000 - xr2 - xr3)/100
+xrSum = int(xr3 + xr2 + xr1)
+
+if xlSum == xrSum:
+    print('Счастливый')
+else:
+    print('Обычный')
+

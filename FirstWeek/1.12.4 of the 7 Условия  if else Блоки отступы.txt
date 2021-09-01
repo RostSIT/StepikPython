@@ -1,0 +1,17 @@
+# put your python code here
+x = str(input())
+if x == 'треугольник':
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    p = (a + b + c) / 2
+    S = (p * (p - a) * (p - b) * (p - c)) ** 0.5
+    print(S)
+elif x == 'прямоугольник':
+    a = int(input())
+    b = int(input())
+    print(a * b)
+elif x == 'круг':
+    r = int(input())
+    print(3.14 * r ** 2)
+
