@@ -1,3 +1,5 @@
+# put your python code here
+
 a = float(input())
 b = float(input())
 o = str(input())
