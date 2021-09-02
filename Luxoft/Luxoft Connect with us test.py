@@ -64,7 +64,7 @@ checkbox.click()
 button = browser.find_element_by_xpath('//*[@id="submit-button"]')
 browser.execute_script("return arguments[0].scrollIntoView(true);", button)
 time.sleep(1)
-#button.click()
+button.click()
 
 time.sleep(10)
 
