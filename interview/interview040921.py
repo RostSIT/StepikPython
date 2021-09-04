@@ -4,13 +4,13 @@
 Последний гость получил 100% того, что осталось после 99-го гостя.
 Чей кусок пирога оказался самым большим?'''
 
-piceOfK = 100
-f = piceOfK
+pieceOfСake = 100
+f = pieceOfСake
 i = 1
 j = []
 s = 0.01
-while i <= piceOfK:
-    f = piceOfK - sum(j)
+while i <= pieceOfСake:
+    f = pieceOfСake - sum(j)
     f *= s
     s += 0.01
     j.append(f)
