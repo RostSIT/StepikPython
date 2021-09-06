@@ -7,11 +7,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 import time
 
+'''current_script_name = os.path.basename(__file__)
 
-current_script_name = os.path.basename(__file__)
-
-with open(current_script_name, "r") as myfile:
-    current_script_text = myfile.read()
+with open(current_script_name, "r") as myfile: current_script_text = myfile.read()  # Закомментировал, по причине 
+того, что текстовое поле странички не принимает сообщения объемом позволяющим передать код автозаполнения и отправки 
+письма. Использовал ссылку на гит '''
 
 options = webdriver.ChromeOptions()
 options.add_argument("--incognito")
@@ -79,7 +79,7 @@ action.move_to_element_with_offset(notARobot, -500, 0).click().perform()
 
 browser.minimize_window()
 agreeAndSendButton = browser.find_element_by_xpath('//*[@id="submit-text-button"]')
-time.sleep(90)
+time.sleep(90)  # Для прохождения фото теста от гугла
 browser.execute_script("return arguments[0].scrollIntoView(true);", agreeAndSendButton)
 wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="submit-text-button"]')))
 time.sleep(2)
