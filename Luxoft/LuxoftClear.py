@@ -60,9 +60,9 @@ inputSpecialization.send_keys('QA Automation')
 
 inputMail = browser.find_element_by_xpath('//*[@id="form_CONTACT_TEXT"]')
 time.sleep(1)
-inputMail.send_keys('Доброго времени суток. Пишу третье письмо в недежде на ответ. Понимая, что поток обращений просто '
-                    'несоизмерим с возможностью их обработать, решил отправлять по нескольку писем в день, для увеличения '
-                    'шансов получить ответ - на какой стадии находиться отбор на курс QA Automation '
+inputMail.send_keys('Доброго времени суток. Пишу письмо №5 в надежде на ответ. Понимая, что поток обращений '
+                    'просто несоизмерим с возможностью их обработать, решил отправлять по нескольку писем в день, '
+                    'для увеличения шансов получить ответ - на какой стадии находиться отбор на курс QA Automation '
                     'стартующий первого октября 2021. Я подал заявку на участие 06 августа. Прошу рассмотреть мою '
                     'кандидатуру с положительной стороны. Заранее благодарю за участие.\n\n P.S. Ниже по тексту '
                     'ссылка на код автозаполнения формы и отправки '
@@ -79,7 +79,7 @@ browser.maximize_window()
 
 action.move_to_element_with_offset(notARobot, -500, 0).click().perform()
 
-browser.minimize_window()
+#  browser.minimize_window()
 agreeAndSendButton = browser.find_element_by_xpath('//*[@id="submit-text-button"]')
 time.sleep(90)  # Для прохождения фото теста от гугла
 browser.execute_script("return arguments[0].scrollIntoView(true);", agreeAndSendButton)
