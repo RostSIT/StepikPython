@@ -21,7 +21,7 @@ browser = webdriver.Chrome(options=options)
 browser.implicitly_wait(100)
 browser.set_page_load_timeout(100)
 wait = WebDriverWait(browser, 100)
-browser.get('https://career.luxoft.com/locations/ukraine/lux-campus/')
+browser.get('https://djinni.co/jobs/279686-junior-python-developer-in-test-apps-/')
 
 buttonAccept = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="CybotCookiebotDialogBodyButtonAccept"]')))
 time.sleep(2)
